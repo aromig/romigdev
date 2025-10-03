@@ -17,6 +17,7 @@
     "@nuxt/ui": "^3.3.3",
     "@unhead/vue": "^2.0.14",
     "@vueuse/core": "^13.9.0",
+    "better-sqlite3": "^12.4.1",
     "eslint": "^9.34.0",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.1.0",
