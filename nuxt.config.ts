@@ -17,6 +17,9 @@ export default defineNuxtConfig({
       markdownit: {
         plugins: ["markdown-it-attrs"]
       }
+    },
+    preview: {
+      api: "https://api.nuxt.studio"
     }
   },
   css: ["~/assets/css/main.scss"],
