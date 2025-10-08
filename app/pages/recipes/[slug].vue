@@ -19,7 +19,7 @@ const {
   pending,
   error
 } = await useAsyncData<Recipe[]>(
-  () => `recipe-${slug.value}`,
+  () => `recipe-${slug.value}-${Date.now()}`,
   () => $fetch(`/api/recipes/${slug.value}`),
   { watch: [slug] }
 )
