@@ -36,12 +36,6 @@ export default defineNuxtConfig({
     "@nuxt/ui"
   ],
 
-  nitro: {
-     prerender: {
-       crawlLinks: true,
-     }
-  },
-
   runtimeConfig: {
     githubToken: process.env.GITHUB_PAT
   },
