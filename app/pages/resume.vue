@@ -1,7 +1,7 @@
 <script setup lang="ts">
-const { data: resume } = await useAsyncData("resume", () =>
-  $fetch("resume.json")
-)
+import resumeData from "@/data/resume.json"
+
+const resume = ref(resumeData)
 
 useHead({
   title: "Resume"
