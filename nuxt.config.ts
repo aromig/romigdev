@@ -37,10 +37,10 @@ export default defineNuxtConfig({
   ],
 
   nitro: {
-    prerender: {
-      crawlLinks: true, // change to false to disable crawling entirely
-      routesIgnore: ['/404']
-    }
+     prerender: {
+       crawlLinks: false, // change to false to disable crawling entirely
+       routesIgnore: ['/404']
+     }
   },
 
   runtimeConfig: {
