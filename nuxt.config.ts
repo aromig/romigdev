@@ -36,6 +36,13 @@ export default defineNuxtConfig({
     "@nuxt/ui"
   ],
 
+  nitro: {
+    prerender: {
+      crawlLinks: true, // change to false to disable crawling entirely
+      routesIgnore: ['/404']
+    }
+  },
+
   runtimeConfig: {
     githubToken: process.env.GITHUB_PAT
   },
