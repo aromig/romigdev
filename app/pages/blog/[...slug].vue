@@ -2,8 +2,9 @@
 const route = useRoute()
 const fullPath = `/blog/${Array.isArray(route.params.slug) ? route.params.slug.join("/") : route.params.slug}`
 
-const { data: post } = await useAsyncData(() =>
-  queryCollection("blog").where("path", "=", fullPath).first()
+const { data: post } = await useAsyncData(
+  () => fullPath,
+  () => queryCollection("blog").where("path", "=", fullPath).first()
 )
 
 useHead({
