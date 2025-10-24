@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data: resume } = await useAsyncData("resume", () =>
-  $fetch("/resume.json")
+  $fetch("resume.json")
 )
 
 useHead({
