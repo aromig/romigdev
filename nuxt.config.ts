@@ -45,6 +45,12 @@ export default defineNuxtConfig({
     "nuxt-studio"
   ],
 
+  nitro: {
+    prerender: {
+      ignore: ["/__nuxt_content/resumeData/sql_dump.txt"]
+    }
+  },
+
   runtimeConfig: {
     githubToken: process.env.GITHUB_PAT
   },
