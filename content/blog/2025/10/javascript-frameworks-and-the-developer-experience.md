@@ -1,14 +1,13 @@
 ---
 title: JavaScript Frameworks and the Developer Experience
-description: Frameworks are great to build new sites with but if you don't keep
-  up with updates, it can be a real headache
-date: 2025-10-03T00:00:00.000Z
 cover: /images/blog/js-on-yellow.png
+date: 2025-10-03T00:00:00.000Z
+description: Frameworks are great to build new sites with but if you don't keep up with updates, it can be a real headache
 ---
 
 # JavaScript frameworks are great
 
-Frameworks such as Vue, Angular, and React have been wonderful since their inception. They enforce structure to a project allowing scalability, help manage state cleanly and predictably, and speed up development with components and library integrations. Manual DOM manipulation is a thing of the past. These frameworks have huge communities which means a ton of support, tutorials, plugins, and third-party tools/extensions. Having each page's and component's script logic separated into their own individual scope makes testing and debugging easier. It's about the developer experience.
+Frameworks such as Vue, Angular, and React have been wonderful since their inception. They enforce structure to a **project allowing scalability, help manage state cleanly and predictably, and speed up development with components and library integrations. Manual DOM manipulation is a thing of the past. These frameworks have huge communities which means a ton o**f support, tutorials, plugins, and third-party tools/extensions. Having each page's and component's script logic separated into their own individual scope makes testing and debugging easier. It's about the developer experience.
 
 ![Spongebob Squarepants holding JavaScript and CSS logos with the caption: It's basically magic](/images/blog/js-basically-magic.jpg)
 

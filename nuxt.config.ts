@@ -9,6 +9,11 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: "fade", mode: "out-in" }
   },
+  colorMode: {
+    preference: "dark", // Or 'system' to follow OS, 'dark' for dark
+    fallback: "dark" // Fallback if no preference or storage issue
+    // ... other options
+  },
   compatibilityDate: "2025-07-15",
   content: {
     markdown: {
@@ -17,9 +22,6 @@ export default defineNuxtConfig({
       markdownit: {
         plugins: ["markdown-it-attrs"]
       }
-    },
-    preview: {
-      api: "https://api.nuxt.studio"
     }
   },
   css: ["~/assets/css/main.scss"],
@@ -28,16 +30,36 @@ export default defineNuxtConfig({
     inlineRouteRules: true
   },
 
+  fonts: {
+    providers: {
+      bunny: false
+    }
+  },
+
   modules: [
     "@nuxt/content",
     "@nuxt/eslint",
     "@nuxt/image",
     "@nuxt/scripts",
-    "@nuxt/ui"
+    "@nuxt/ui",
+    "nuxt-studio"
   ],
 
   runtimeConfig: {
     githubToken: process.env.GITHUB_PAT
+  },
+
+  studio: {
+    i18n: {
+      defaultLocale: "en"
+    },
+    route: "/_studio",
+    repository: {
+      provider: "github",
+      owner: "aromig",
+      repo: "romigdev",
+      branch: "main"
+    }
   },
 
   vite: {

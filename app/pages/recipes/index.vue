@@ -18,8 +18,7 @@ interface Recipe {
   tags: string[]
   content: string
 }
-const fallbackImage =
-  "https://placehold.co/600x400/ccc/0077b5/?text=Recipe&font=open-sans"
+const fallbackImage = "/images/recipe_fallback_icon.png"
 const recipes = ref<Recipe[]>([])
 const loading = ref(true)
 
