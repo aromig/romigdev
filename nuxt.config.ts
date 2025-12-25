@@ -47,7 +47,9 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      ignore: ["/__nuxt_content/resumeData/sql_dump.txt"]
+      ignore: ["/__nuxt_content/resumeData/sql_dump.txt"],
+      routes: ["/"],
+      crawlLinks: true
     }
   },
 
@@ -56,9 +58,7 @@ export default defineNuxtConfig({
   },
 
   studio: {
-    i18n: {
-      defaultLocale: "en"
-    },
+    dev: true,
     route: "/_studio",
     repository: {
       provider: "github",
