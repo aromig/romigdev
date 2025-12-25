@@ -4,7 +4,7 @@ const { data: contributions } = await useAsyncData("contributions", () =>
   $fetch("https://api.github.com/graphql", {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${config.githubToken}`,
+      Authorization: `Bearer ${config.githubPat}`,
       "Content-Type": "application/json"
     },
     body: JSON.stringify({

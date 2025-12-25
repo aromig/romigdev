@@ -54,7 +54,10 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    githubToken: process.env.GITHUB_PAT
+    githubPat: "",
+    studioGithubClientId: "",
+    studioGithubClientSecret: "",
+    studioGithubModerators: ""
   },
 
   studio: {
